@@ -16,14 +16,49 @@ body {
 }
 
 img {
-  max-width: 100%;
+  display: inline;
+  grid-column: 1;
+  max-width: 100%
 }
+
 
 figure {
   margin: 0;
 }
 
 .film {
-  width: 50%;
+  max-width: 60%;
+  max-height: 290px;
   margin: 40px auto;
+  border: 1px solid lightgrey;
+  display: grid;
+  grid-template-columns: 33% 67%;
+}
+
+.film-details {
+  grid-row: 1;
+  grid-column: 2;
+  position: relative;
+  margin-right: 11px;
+  margin-left: 10px;
+}
+
+.action-watch-later {
+  position: relative;
+  color: red;
+  bottom: 85%;
+  left: 80%
+}
+
+.action-like {
+  color: red;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 30px;
+  right: 0px;
+}
+
+.film-poster {
+  margin-top: 10px;
+  margin-left: 10px;
 }
